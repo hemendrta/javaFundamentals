@@ -11,7 +11,8 @@ public class StreamDemo {
 
     public static void main(String[] args) {
 
-        List<Employee> employees=Arrays.asList(new Employee(101,"hemendra", Arrays.asList(7999996891l,9179075007l)),new Employee(102,"aditi",Arrays.asList(9229170965l,9826507240l)));
+        List<Employee> employees=Arrays.asList(new Employee(101,"hemendra", Arrays.asList(8789389494l,7927629769l)),
+                new Employee(102,"aditi",Arrays.asList(692769791l,1789756917697l)));
 
 //        counting the total number of items in the list
 
