@@ -4,7 +4,7 @@ Basic Fundamentals Related to Java. Topics which we have discussed in this are m
 
 Sending Email <br>
 Reading different file types <br>
-Dealing with Streams
+Dealing with Streams <br>
 Functional Interfaces (Basic)
 
 Thanks for your kind support, keep exploring and learning...
