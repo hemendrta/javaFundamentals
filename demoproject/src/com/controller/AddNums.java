@@ -1,3 +1,5 @@
+/*Servlet to add two numbers.*/
+
 package com.controller;
 
 import java.io.IOException;

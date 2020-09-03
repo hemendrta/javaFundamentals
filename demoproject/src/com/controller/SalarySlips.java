@@ -1,3 +1,5 @@
+/*Example of how to use the different page for different user.*/
+
 package com.controller;
 
 import java.io.IOException;
@@ -30,7 +32,7 @@ public class SalarySlips extends HttpServlet {
 					"<title>Salary Details</title>\n" + 
 					"</head>\n" + 
 					"<body>\n" + 
-					"	Welcome: "+username+"\n" + 
+					"	Welcome: "+username.substring(0, 1).toUpperCase()+username.substring(1, username.length())+"\n" + 
 					"<h4>Please click the lin below to download the Salary Slips</h4><br><a href='#'>Download</a></body>\n" + 
 					"</html>");
 			
@@ -43,7 +45,7 @@ public class SalarySlips extends HttpServlet {
 					"<title>Salary Details</title>\n" + 
 					"</head>\n" + 
 					"<body>\n" + 
-					"	Welcome: "+username+"\n" + 
+					"	Welcome: "+username.substring(0, 1).toUpperCase()+username.substring(1, username.length())+"\n" + 
 					"<h4>Sorry!!!!<br>Salary-slips not generated yet.</h4></body>\n" + 
 					"</html>");
 			

@@ -1,3 +1,5 @@
+/*Servlet to check whether the correct user has logged in or not*/
+
 package com.controller;
 
 import java.io.IOException;

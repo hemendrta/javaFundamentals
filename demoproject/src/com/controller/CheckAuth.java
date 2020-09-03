@@ -1,3 +1,5 @@
+/*Servlet to give access to Admin or User Rights*/
+
 package com.controller;
 
 import java.io.IOException;
@@ -23,12 +25,12 @@ public class CheckAuth extends HttpServlet {
 		
 		if(username.equalsIgnoreCase("hemendra")) {
 			
-			printWriter.print("<html><head><title>Admin Page</title></head><body><h4 style=text-align:center;>Welcome: "+username+"</h4><a href='salarySlips'>Salary Slip</a><br><a href=''>Personal Information</a></body></html>");
+			printWriter.print("<html><head><title>Admin Page</title></head><body><h4 style=text-align:center;>Welcome: "+username.substring(0, 1).toUpperCase()+username.substring(1, username.length())+"</h4><a href='salarySlips'>Salary Slip</a><br><a href='personInfo'>Personal Information</a></body></html>");
 			
 		}
 		else {
 			
-			printWriter.print("<html><head><title>User Page</title></head><body><h4 style=text-align:center;>Welcome: "+username+"</h4><a href='salarySlips'>Salary Slip</a><br><a href=''>Personal Information</a></body></html>");
+			printWriter.print("<html><head><title>User Page</title></head><body><h4 style=text-align:center;>Welcome: "+username.substring(0, 1).toUpperCase()+username.substring(1, username.length())+"</h4><a href='salarySlips'>Salary Slip</a><br><a href='personInfo'>Personal Information</a></body></html>");
 			
 		}
 		

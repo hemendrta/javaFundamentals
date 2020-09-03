@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  
+  <!-- Servlet Definition for performing the first operation of the html page -->
+  
   <servlet>
   
   	<servlet-name>abc</servlet-name>
@@ -12,6 +15,8 @@
   
   </servlet-mapping>
   
+  <!-- Servlet definition to perform the second operation in the html which is login, also we have used checkAuth which will pass the user to the admin or user page. -->
+  
   <servlet>
   	
   	<servlet-name>loginServ</servlet-name>
@@ -23,20 +28,6 @@
   
   	<servlet-name>loginServ</servlet-name>
   	<url-pattern>/login</url-pattern>
-  
-  </servlet-mapping>
-  
-  <servlet>
-  
-  	<servlet-name>substractNumber</servlet-name>
-  	<servlet-class>com.controller.SubstractNums</servlet-class> 
-
-  </servlet>
-  
-  <servlet-mapping>
-  
-  	<servlet-name>substractNumber</servlet-name>
-  	<url-pattern>/subNum</url-pattern>
   
   </servlet-mapping>
   
@@ -64,6 +55,46 @@
   	<servlet-name>salarySlips</servlet-name>
   	<url-pattern>/salarySlips</url-pattern>
   	
+  </servlet-mapping>
+  
+  <servlet>
+  
+  	<servlet-name>personInfo</servlet-name>
+  	<servlet-class>com.controller.PersonalInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  
+  	<servlet-name>personInfo</servlet-name>
+  	<url-pattern>/personInfo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  
+  	<servlet-name>uploadFile</servlet-name>
+  	<servlet-class>com.controller.UploadProfile</servlet-class>
+  	
+  </servlet>
+  <servlet-mapping>
+  
+  	<servlet-name>uploadFile</servlet-name>
+  	<url-pattern>/uploadFile</url-pattern>
+  
+  </servlet-mapping>
+  
+  <!-- Servlet Definition to perform the third operation in the html page. -->
+  
+  <servlet>
+  
+  	<servlet-name>substractNumber</servlet-name>
+  	<servlet-class>com.controller.SubstractNums</servlet-class> 
+
+  </servlet>
+  
+  <servlet-mapping>
+  
+  	<servlet-name>substractNumber</servlet-name>
+  	<url-pattern>/subNum</url-pattern>
+  
   </servlet-mapping>
 
 </web-app>
